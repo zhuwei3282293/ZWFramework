@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ZWMainTabBarVC.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //设置初始界面
+    self.window.rootViewController = [ZWMainTabBarVC sharedInstance];
     return YES;
 }
 
